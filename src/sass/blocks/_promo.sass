@@ -1,0 +1,61 @@
+.promo
+    position: relative
+    min-height: 678px
+    padding: 40px 0
+    background-color: $main-gray
+    overflow: hidden
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__info
+        width: 642px
+    &__descr
+        font-weight: 400
+        font-size: 24px
+        color: #475f76
+    h1
+        margin-top: 60px
+    &__subheader
+        margin-top: 20px
+        font-weight: 500
+        font-size: 40px
+        color: #f3cc50
+    &__safe
+        width: 579px
+        height: 583px
+        position: relative
+        &__youtube
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -70%)
+            z-index: 2
+            &-sm
+                display: none
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -70%)
+                z-index: 2
+                img
+                    width: 100%
+            img
+                width: 100%
+        &__img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 1
+            img
+                width: 100%
+        &__vector
+            position: absolute
+            top: 50%
+            left: 65%
+            transform: translate(-50%, -25%)
+            z-index: -1
+            overflow: hidden
+            img
+                width: 100%

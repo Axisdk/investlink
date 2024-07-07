@@ -1,0 +1,81 @@
+.faq
+    position: relative
+    min-height: 458px
+    padding: 150px 0 100px 0
+    background-color: $main-white
+    overflow: hidden
+    &__stroke
+        width: 100%
+        position: absolute
+        top: -50px
+        left: 0
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        z-index: -1
+        hr
+            width: 1px
+            height: 1000px
+            border: 1px dotted #e1ebf4
+            &:first-child
+                border-style: solid       
+            &:last-child
+                border-style: solid    
+    &__links
+        position: relative
+        ul
+            padding-left: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            li
+                position: relative
+                list-style-type: none
+                margin-right: 30px
+                a  
+                    font-family: $font-family
+                    font-weight: 400
+                    font-size: 16px
+                    text-align: center
+                    color: $main-gray
+                    text-decoration: none
+                &::before
+                    content: "‣"
+                    position: absolute
+                    top: 1px
+                    right: -18px
+                &:last-child
+                    margin-right: 0
+                    a
+                        color: $second-blue
+                    &::before
+                        content: ""
+    &__wrapper
+        margin-top: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        width: 594px
+        margin-left: 30px
+        margin-bottom: 50px
+        a
+            position: relative
+            font-family: $second-family
+            font-weight: 500
+            font-size: 30px
+            line-height: 110%
+            color: #212129
+            text-decoration: none
+            transition: .3s all
+            &:hover
+                color: #212129c3
+            &::before
+                content: ""
+                position: absolute
+                width: 25px
+                height: 25px
+                top: 6px
+                left: -36px
+                background: url('../img/icons/TagHorizontal.svg')

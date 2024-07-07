@@ -1,0 +1,124 @@
+.button
+    border-radius: 8px
+    border: none
+    font-family: $font-family
+    font-weight: 500
+    text-align: center
+    transition: .3s all
+
+    &-view-sm
+        display: none
+
+    &-modal
+        background: none
+        border: 1px solid $text-gray
+        color: $main-white
+    // Scale
+    &-sm
+        width: 128px
+        height: 44px
+    &-md
+        width: 220px
+        height: 54px
+    &-big
+        width: 303px
+        height: 54px
+
+    // Position
+    &-center
+        display: block
+        margin: 0 auto
+    
+    // Margins
+    &-mt30
+        margin-top: 30px
+    &-mt50
+        margin-top: 50px
+    &-mt60
+        margin-top: 60px
+    &-mt80
+        margin-top: 80px
+    // Color
+    &-yellow
+        background-color: $main-yellow
+        color: #212129
+        &:hover
+            background-color: $hButton-yellow
+    &-white
+        background-color: #fff
+        color: #212129
+        &:hover
+            background-color: $hButton-white
+    &-black
+        background-color: $main-black
+        color: $main-white
+        &:hover
+            background-color: $hButton-black
+    &-gray
+        background-color: $main-gray
+        color: $main-white
+        
+
+
+    // Font size
+    &-fs15
+        font-size: 15px
+    &-fs19
+        font-size: 19px
+
+@media (max-width: $breakpoint-lg)
+    .button
+        &-sm
+            width: 128px
+            height: 38px
+        &-md
+            width: 200px
+            height: 48px
+        &-big
+            width: 265px
+            height: 48px
+        &-fs15
+            font-size: 14px
+        &-fs19
+            font-size: 17px
+
+@media (max-width: $breakpoint-md)
+    .button
+        &-sm
+            width: 107px
+            height: 32px
+        &-md
+            width: 200px
+            height: 48px
+        &-big
+            width: 256px
+            height: 48px
+            
+@media (max-width: $breakpoint-sm)
+    .button
+        &-sm
+            width: 97px
+            height: 32px
+        &-md
+            display: block
+            margin: 0 auto
+            width: 200px
+            height: 50px
+        &-big
+            display: block
+            margin: 0 auto
+            width: 250px
+            height: 50px
+        
+        &-mt50
+            margin-top: 50px
+        &-mt60
+            margin-top: 60px
+        &-mt80
+            margin-top: 80px
+
+        &-fs15
+            font-size: 13px
+        &-fs19
+            font-size: 16px
+

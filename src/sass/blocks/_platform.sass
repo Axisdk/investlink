@@ -1,0 +1,95 @@
+.platform
+    min-height: 1400px
+    padding: 190px 0 20px 0
+    background-color: $main-white
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-sm
+            display: none
+            width: 162px
+            height: 31px
+            img
+                width: 100%
+    &__info
+        margin-top: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__text
+            width: 512px
+        &__item
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-sm
+                display: none
+            &__descr
+                width: 512px
+                display: flex
+                flex-direction: column
+                margin-left: 30px
+        &__img
+            width: 205px
+            height: 215px
+            img
+                width: 100%
+    &__quote
+        font-family: $second-family
+        font-weight: 500
+        font-size: 20px
+        line-height: 130%
+        color: $main-gray
+    &__name
+        margin-top: 20px
+        font-family: $second-family
+        font-weight: 500
+        font-size: 20px
+        line-height: 130%
+        color: $text-gray
+        span
+            font-family: $font-family
+            font-weight: 500
+            font-size: 15px
+            line-height: 120%
+            color: $second-blue
+    &__official
+        width: 477px
+        margin-top: 30px
+        border-left: 5px solid $main-yellow
+        padding-left: 10px
+        font-family: $font-family
+        font-weight: 400
+        font-size: 20px
+        line-height: 130%
+        color: $text-gray
+        span
+            color: $alice-blue
+    &__wrapper
+        margin-top: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        margin-top: 30px
+        width: 410px
+        padding: 40px 30px
+        border: 1px solid #e1ebf4
+        border-radius: 12px
+        transition: .5s all
+        &:hover
+            border-color: #c5cdd4
+            transform: scale(1.05) translateY(-10px)
+    &__img
+        width: 40px
+        height: 40px
+        img
+            width: 100%
+    &__descr
+        margin-top: 20px
+        font-family: $second-family
+        font-weight: 500
+        font-size: 20px
+        color: $main-gray
